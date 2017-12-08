@@ -5,6 +5,10 @@ class MockMixin(object):
     ANY = unittest.mock.ANY
 
     @staticmethod
+    def call(*args, **kwargs):
+        return unittest.mock.call(*args, **kwargs)
+
+    @staticmethod
     def mock(*args, **kwargs):
         return unittest.mock.Mock(*args, **kwargs)
 

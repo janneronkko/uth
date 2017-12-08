@@ -20,6 +20,12 @@ class MockMixinTest(unittest.TestCase, uth.MockMixin):
     def test_any(self):
         self.assertIs(self.ANY, unittest.mock.ANY)
 
+    def test_call(self):
+        self.assertEqual(
+            self.call(1, a=2),
+            unittest.mock.call(1, a=2),
+        )
+
     def test_mock(self):
         mock = self.mock(name='test mock', return_value=unittest.mock.sentinel.retval)
 

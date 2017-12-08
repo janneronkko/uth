@@ -78,6 +78,10 @@ The following members are added:
 
   Access to *unittest.mock.sentinel*
 
+* **call(*args, \*\*kwargs)**
+
+  *unittest.mock.call*
+
 * **mock(*args, \*\*kwargs)**
 
   Calls *unittest.mock.Mock* with given arguments

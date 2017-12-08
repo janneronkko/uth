@@ -25,6 +25,14 @@ class MockMixinTest(unittest.TestCase, uth.MockMixin):
 
         self.assertFalse(self.addCleanup.called)
 
+    def test_magic_mock(self):
+        mock = self.magic_mock(name='test mock', return_value=unittest.mock.sentinel.retval)
+
+        self.assertIsInstance(mock, unittest.mock.MagicMock)
+        self.assertEqual(mock(), unittest.mock.sentinel.retval)
+
+        self.assertFalse(self.addCleanup.called)
+
     def test_sentinel(self):
         self.assertIs(self.sentinel, unittest.mock.sentinel)
         self.assertEqual(self.sentinel.sentinel_object, unittest.mock.sentinel.sentinel_object)

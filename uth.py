@@ -6,6 +6,10 @@ class MockMixin(object):
     def mock(*args, **kwargs):
         return unittest.mock.Mock(*args, **kwargs)
 
+    @staticmethod
+    def magic_mock(*args, **kwargs):
+        return unittest.mock.MagicMock(*args, **kwargs)
+
     @property
     def sentinel(self):
         return unittest.mock.sentinel

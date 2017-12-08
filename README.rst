@@ -78,6 +78,10 @@ The following members are added:
 
   Calls *unittest.mock.Mock* with given arguments
 
+* **magic_mock(*args, \*\*kwargs)**
+
+  Calls *unittest.mock.MagicMock* with given arguments
+
 * **patch(*args, \*\*kwargs)**
 
   Calls *unittest.mock.patch* with given arguments

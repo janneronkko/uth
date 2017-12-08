@@ -70,6 +70,10 @@ A mixin class for *unittest.TestCase* (or any other class from which you want to
 
 The following members are added:
 
+* **ANY**
+
+  unittest.mock.ANY
+
 * **sentinel** (property)
 
   Access to *unittest.mock.sentinel*

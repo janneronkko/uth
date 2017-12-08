@@ -2,6 +2,8 @@ import unittest.mock
 
 
 class MockMixin(object):
+    ANY = unittest.mock.ANY
+
     @staticmethod
     def mock(*args, **kwargs):
         return unittest.mock.Mock(*args, **kwargs)

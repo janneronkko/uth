@@ -5,7 +5,7 @@ setuptools.setup(
     name='uth',
     use_autover=True,
     description='Unit test helpers',
-    url='https://github.com/jannero/uth',
+    url='https://github.com/janneronkko/uth',
     author='Janne Rönkkö',
     author_email='janne.ronkko@iki.fi',
     license='MIT',

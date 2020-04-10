@@ -7,7 +7,7 @@ setuptools.setup(
     description='Unit test helpers',
     url='https://github.com/jannero/uth',
     author='Janne Rönkkö',
-    author_email='jroo@iki.fi',
+    author_email='janne.ronkko@iki.fi',
     license='MIT',
     classifiers=[
         'Development Status :: 5 - Production/Stable',

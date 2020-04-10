@@ -1,10 +1,15 @@
 import setuptools
 
 
+with open('README.rst', 'rt') as readme_file:
+    long_desc = readme_file.read()
+
 setuptools.setup(
     name='uth',
     use_autover=True,
     description='Unit test helpers',
+    long_description=long_desc,
+    long_description_content_type='text/x-rst',
     url='https://github.com/janneronkko/uth',
     author='Janne Rönkkö',
     author_email='janne.ronkko@iki.fi',
